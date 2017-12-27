@@ -1,0 +1,31 @@
+<div class="container">
+	<header class="main-header">
+		<div class="header__logo">
+			<div class="logo">
+				Jet<span>Ro</span>
+			</div>	
+		</div>
+		<nav class="top_menu menuToggle" role="navigation">
+			<input type="checkbox"/>
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul class="menu">
+				{% import "data/data.html" as menu %}
+
+				{% for menu in menu.list %}
+				<li><a href="#" title="">{{menu.title}}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</header>
+</div>
+<div class="header-line">
+	<div class="aside-line"></div>
+	<div class="container">
+		<div class="title-line">
+			<h2 class="title-line__h2">Blog</h2>
+		</div>
+	</div>
+	<div class="aside-line"></div>
+</div>

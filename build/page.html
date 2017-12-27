@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>PageRo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <!-- Preloader -->
+    <style type="text/css">
+      #hellopreloader_preload {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f3af9d url(http://hello-site.ru//main/images/preloads/tail-spin.svg) center center no-repeat;
+        background-size: 98px;
+      }
+
+    </style>
+    <div id="hellopreloader_preload"></div>
+    <script type="text/javascript">
+      var hellopreloader = document.getElementById("hellopreloader_preload");
+
+      function fadeOutnojquery(el)
+      {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function()
+        {
+          el.style.opacity = el.style.opacity - 0.05;
+          if (el.style.opacity <= 0.05)
+          {
+            clearInterval(interhellopreloader);
+            hellopreloader.style.display = "none";
+          }
+        }, 16);
+      }
+      window.onload = function()
+      {
+        setTimeout(function()
+        {
+          fadeOutnojquery(hellopreloader);
+        }, 2000);
+      };
+
+    </script>
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <div class="container">
+        <header class="main-header">
+          <div class="header__logo">
+            <div class="logo"> Jet<span>Ro</span> </div>
+          </div>
+          <nav class="top_menu menuToggle" role="navigation"> <input type="checkbox" /> <span></span> <span></span> <span></span>
+            <ul class="menu">
+              <li><a href="#" title="">Home</a></li>
+              <li><a href="#" title="">About us</a></li>
+              <li><a href="#" title="">Blog</a></li>
+              <li><a href="#" title="">Portfolio</a></li>
+              <li><a href="#" title="">Contact  us</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="header-line">
+        <div class="aside-line"></div>
+        <div class="container">
+          <div class="title-line">
+            <h2 class="title-line__h2">Blog</h2>
+          </div>
+        </div>
+        <div class="aside-line"></div>
+      </div>
+      <div class="container container--flex">
+        <div class="main-container">
+          <!-- start slider block -->
+          <div class="slider-content">
+            <div class="icon-frame">
+              <div class="icon-frame__blog icon-frame--big"> <svg class="icon icon-polaroid"><use xlink:href="img/sprite.svg#icon-polaroid"></use></svg> </div>
+            </div>
+            <div class="slick-slider blog-slider"> <img src="img/slider_image_1.jpg" alt=""> <img src="img/Punisher.jpg" alt=""> <img src="img/slide_3.png" alt=""> <img src="img/forest.jpg" alt=""> </div>
+            <div class="blog-info">
+              <div class="article-meta">
+                <div class="article-meta__info">
+                  <h5>Date</h5>
+                  <p>April 15, 2012</p>
+                </div>
+                <div class="article-meta__info">
+                  <h5>Tags</h5>
+                  <p>Website | Design</p>
+                </div>
+                <div class="article-meta__info">
+                  <a href="#" title="">
+                    <h5>Comments</h5>
+                    <p>4</p>
+                  </a>
+                </div>
+              </div>
+              <div class="blog-article">
+                <h2 class="blog-h2"><a href="#" title="">Top  WordPress  Themes  of  2012</a></h2>
+                <p>Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
+                  instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.</p>
+                <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
+                  ...</p>
+              </div>
+            </div>
+            <div class="division-line"></div>
+          </div>
+          <!-- end slider block -->
+          <!-- start article block -->
+          <div class="single-article-content">
+            <div class="icon-frame">
+              <div class="icon-frame__blog icon-frame--big"> <svg class="icon icon-file"><use xlink:href="img/sprite.svg#icon-file"></use></svg> </div>
+            </div>
+            <div class="img-container"> <img src="img/big_image_1.jpg" alt=""> </div>
+            <div class="blog-info">
+              <div class="article-meta">
+                <div class="article-meta__info">
+                  <h5>Date</h5>
+                  <p>April 15, 2012</p>
+                </div>
+                <div class="article-meta__info">
+                  <h5>Tags</h5>
+                  <p>Website | Design</p>
+                </div>
+                <div class="article-meta__info">
+                  <a href="#" title="">
+                    <h5>Comments</h5>
+                    <p>4</p>
+                  </a>
+                </div>
+              </div>
+              <div class="blog-article">
+                <h2 class="blog-h2"><a href="#" title="">Jesus  Typography  Wallpaper  Giveaway!</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum voluptates, quasi deleniti nihil, vero provident ducimus sit quis, minima, itaque sapiente aliquam. Praesentium cum deserunt aliquid quisquam ducimus quae eaque debitis, corporis
+                  recusandae aperiam beatae delectus quod eveniet repellendus molestias modi soluta quis facilis numquam!</p>
+                <p>Dignissimos totam nobis a ipsa repudiandae quo esse doloremque ducimus dolorem neque, alias, sit expedita, ullam amet reiciendis odit. Debitis hic doloribus blanditiis, magni ullam facilis eum officiis.</p>
+              </div>
+            </div>
+            <div class="division-line"></div>
+          </div>
+          <!-- end article block -->
+          <!-- start quotes block -->
+          <div class="quotes-content">
+            <div class="icon-frame">
+              <div class="icon-frame__blog icon-frame--big"> <svg class="icon icon-quotes"><use xlink:href="img/sprite.svg#icon-quotes"></use></svg> </div>
+            </div>
+            <div class="quote-article"> <svg class="icon icon-quotes"><use xlink:href="img/sprite.svg#icon-quotes"></use></svg>
+              <p>Write anything you want here in this quotable area. Something unique you want people to learn about your website or some cool random fact. Its totally up to you. Write anything you want here in this quotable area. Something unique you want
+                people to learn about your website or some cool random fact. Its totally up to you.</p>
+            </div>
+            <div class="division-line"></div>
+          </div>
+          <!-- end quotes block -->
+          <!-- start links block -->
+          <div class="blog-links-content">
+            <div class="icon-frame">
+              <div class="icon-frame__blog icon-frame--big icon-link--big"> <svg class="icon icon-link"><use xlink:href="img/sprite.svg#icon-link"></use></svg> </div>
+            </div>
+            <h5 class="blog-h2"><a href="#" title="">Some  of  the  best  freebies  on  the  web</a></h5>
+            <div class="link-names"> <a href="#" title="">www.bestpsdfreebies.com</a> </div>
+            <p>Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei.</p>
+            <div class="division-line"></div>
+          </div>
+          <!-- end links block -->
+          <div class="pages-number"> <a class="is-active" href="#" title=""><span>1</span></a> <a href="#" title=""><span>2</span></a> <a href="#" title=""><span>3</span></a> </div>
+        </div>
+        <aside class="aside-bar">
+          <div class="about-us-small aside-bar--last-item">
+            <div class="aside__line js-toggle-info">
+              <h5>About Jetro</h5>
+              <div class="division-line"></div>
+            </div>
+            <div class="toggle-info">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum.</p>
+            </div>
+          </div>
+          <div class="categories-small">
+            <div class="aside__line js-toggle-info">
+              <h5>categories</h5>
+              <div class="division-line"></div>
+            </div>
+            <div class="toggle-info">
+              <ul>
+                <li><a href="#">Video (<span>3</span>)</a></li>
+                <li><a href="#">Sports (<span>5</span>)</a></li>
+                <li><a href="#">Media (<span>2</span>)</a></li>
+                <li><a href="#">Entertainment (<span>7</span>)</a></li>
+                <li><a href="#">Life (<span>4</span>)</a></li>
+                <li><a href="#">Super Cool Stuff (<span>8</span>)</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="aside-popup">
+            <div class="aside__line js-toggle-info">
+              <h5>Photo gallery</h5>
+              <div class="division-line"></div>
+            </div>
+            <div class="toggle-info">
+              <div class="gallery-small"> <img class="js-minimized gallery-small__item" src="img/small_1.jpg" alt=""> <img class="js-minimized gallery-small__item" src="img/small_2.jpg" alt=""> <img class="js-minimized gallery-small__item" src="img/small_3.jpg" alt=""> <img class="js-minimized gallery-small__item"
+                  src="img/small_4.jpeg" alt=""> <img class="js-minimized gallery-small__item" src="img/small_5.jpg" alt=""> <img class="js-minimized gallery-small__item" src="img/small_6.jpg" alt=""> <img class="js-minimized gallery-small__item" src="img/small_1.jpg"
+                  alt=""> <img class="js-minimized gallery-small__item" src="img/small_2.jpg" alt=""> </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

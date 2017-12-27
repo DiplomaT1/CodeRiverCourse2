@@ -1,0 +1,92 @@
++font(Bebas, Bebas)
+
+a 
+    color: #000
+    text-decoration: none
+
+.container
+
+	width: 960px
+	margin-right: auto
+	margin-left: auto
+	padding-left: 10px
+	padding-right: 10px
+
+	+rmin(200)
+		width: 200px
+	+rmin(320)
+		width: 80%
+	+rmin(480)
+		width: 90%
+	+rmin(940)
+		width: 80%
+	+rmin(1100)
+		width: 65%
+	+rmin(1600)
+		width: 50.5%
+		
+.container--flex
+	+flex
+
+.main-container
+	position: relative
+	
+	+rmin(320)
+		margin-right: 0
+	+rmin(480)
+		width: 71.5%
+		margin-right: 25px
+	+r(480)
+		width: 100%
+
+.blog-h2
+	color: $dark-orange
+	text-transform: uppercase
+	font-family: Bebas
+	+fs(18)
+	font-weight: 400 
+	a
+		color: $dark-orange
+	
+.pages-number
+	+flex
+	margin-left: 5px
+	margin-bottom: 80px
+	
+	span
+		display: block
+		height: 25px
+		width: 25px
+		font-family: Bebas
+		text-align: center
+		margin-right: 4px 
+		color: #FFF
+		background-color: $dark-orange 
+		opacity: 0.6 
+		&:hover
+			opacity: 0.8
+	
+	.is-active
+		span
+			opacity: 1 
+
+.division-line
+	background-image: url(../../img/division-line.png) 
+	height: 13px
+	width: 100%
+	margin-top: 3px
+
+.single-article-content
+	.blog-info
+		margin-top: 10px
+		
+	.division-line
+		+rmin(320)
+			margin-top: 17px
+			margin-bottom: 28px
+		+rmin(700)
+			margin-top: 47px
+			margin-bottom: 48px
+			
+
+		

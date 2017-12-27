@@ -1,0 +1,56 @@
+.slider-content
+    .division-line
+        +rmin(320)
+            margin-top: 16px
+            margin-bottom: 28px
+        +rmin(480)
+            margin-top: 46px
+            margin-bottom: 58px
+
+.slick-prev, .slick-next 
+    position: absolute
+    border: solid #fff
+    opacity: 0.9
+    border-width: 0 13px 13px 0
+    display: inline-block
+    height: 36px
+    width: 36px
+    line-height: 0px
+    font-size: 0px
+    cursor: pointer
+    background: transparent
+    top: 50%
+    margin-top: -20px
+    padding: 0
+    z-index: 999
+    outline: none;
+    &:hover, &:focus 
+        outline: none
+        background: transparent
+        color: transparent
+        opacity: 0.7
+
+.slick-prev:before, .slick-next:before 
+    color: #000
+    // opacity: $slick-opacity-default
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+
+.slick-prev 
+    left: 4%
+    transform: rotate(135deg)
+    -webkit-transform: rotate(135deg)
+
+.slick-next 
+    right: 4%
+    transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+   
+/* the slides */
+.slick-slide 
+	margin: 0 10px
+
+/* the parent */
+.slick-list 
+	margin: 0 -10px

@@ -1,0 +1,52 @@
+.icon-frame
+	background-color: $dark-orange
+	position: absolute
+	
+	+rmin(320)
+		display: none
+		
+	+rmin(700)
+		display: block
+		width: 30px
+		height: 30px
+		left: -35px
+		
+	+rmin(800)
+		width: 40px
+		height: 40px
+		left: -50px
+		
+	+rmin(940)
+		width: 75px
+		height: 75px
+		left: -85px
+		
+.icon-frame__blog
+	position: relative
+	top: 30%
+	left: 25%
+
+.icon-frame--big 
+	&>svg
+		fill: #fff
+		
+	+rmin(480)
+		&>svg
+			width: 1.2em
+			height: 1.1em
+			
+	+rmin(800)
+		&>svg
+			width: 1.4em
+			height: 1.3em
+			
+	+rmin(940)
+		&>svg
+			width: 2.1em
+			height: 2.0em
+
+.icon-link--big
+	+rmin(940)
+		&>svg
+			width: 3.0em
+			height: 2.5em

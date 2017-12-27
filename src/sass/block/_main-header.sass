@@ -1,0 +1,150 @@
+.main-header
+	margin-top: 14px
+	+rmin(100)
+		text-align: right
+	+rmin(320)
+		text-align: center
+	+rmin(480)
+		margin-bottom: 17px
+	+rmin(700)
+		text-align: left
+		+flex
+
+.header__logo
+	+rmin(320)
+		+fs(36)
+
+.logo
+	color: $dark-orange
+	text-transform: uppercase
+	font-family: Bebas
+	
+	span
+		color: $light-orange
+
+.top_menu
+	margin-top: 16px
+	
+	+rmin(480)
+		+flex
+		justify-content: center
+		width: 100%
+		
+	+rmin(700)
+		justify-content: flex-end
+	input
+		+rmin(480)
+			display: none
+	
++r(479)
+	.menuToggle
+		display: block
+		position: relative
+		z-index: 1		
+		-webkit-user-select: none
+		user-select: none
+		width: 40px
+		height: 32px
+		top: -30px
+		left: -20px
+
+	.menuToggle
+		input
+			display: block
+			width: 40px
+			height: 32px
+			position: absolute
+			top: -7px
+			left: -5px		
+			cursor: pointer		
+			opacity: 0
+			z-index: 2		
+			-webkit-touch-callout: none
+
+	.menuToggle
+		span
+			display: block
+			width: 33px
+			height: 4px
+			margin-bottom: 5px
+			position: relative
+			background: $dark-orange
+			border-radius: 3px			
+			z-index: 1			
+			transform-origin: 4px 0px			
+			transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+	
+	.menuToggle 
+		span:first-child
+			transform-origin: 0% 0%
+
+	.menuToggle 
+		span:nth-last-child(2)
+			transform-origin: 0% 100%
+
+	.menuToggle 
+		input:checked 
+			&~span:nth-last-child(3)
+				opacity: 0
+				 transform: rotate(0deg) scale(0.2, 0.2);
+
+	.menuToggle 
+		input:checked 
+			&~span:nth-last-child(2)
+				transform: rotate(-45deg) translate(0, -1px);
+
+	.menuToggle 
+		input:checked 
+			&~span
+				transform: rotate(45deg) translate(0, -1px);
+
+	.menu
+		position: absolute
+		width: 360px
+		margin: -70px 0 0 -50px
+		padding-top: 60px
+		padding-bottom: 40px
+		background: $light-orange
+		list-style-type: none
+		-webkit-font-smoothing: antialiased		
+		transform-origin: 0% 0%
+		transform: translate(-100%, 0)
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+
+	.menu 
+		li
+			padding: 10px 110px
+			font-size: 22px
+			float: none
+
+	.menuToggle input:checked
+		&~ul
+			transform: none
+
+.menu
+	display: block
+	+rmin(480)
+		+flex
+
+	li
+		text-transform: uppercase
+		font-family: Bebas
+		+rmin(480)
+			padding-left: 20px
+			+fs(14)
+		+rmin(560)
+			+fs(16)
+		+rmin(1200)
+			padding-left: 28px
+			+fs(16)
+		
+		a
+			color: $dark-orange
+			&:focus
+				font-weight: 700
+				color: $dark-orange
+			&:hover
+				color: $light-orange
+				text-decoration: underline
+			+rmin(480)
+				color: #b9b9b9

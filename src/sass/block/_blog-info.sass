@@ -1,0 +1,49 @@
+.blog-info
+	margin-top: 13px
+	+rmin(700)
+		+flex
+
+.article-meta
+	width: 21%
+	margin-top: 3px
+	margin-right: 10px
+	
+	+r(699)
+		+flex
+		justify-content: space-around
+		width: 100%
+
+	h5
+		color: $dark-orange
+		text-transform: uppercase
+		font-family: Bebas
+		+fs(12)
+		font-weight: 400 
+		margin-bottom: 10px
+	
+	p
+		font-family: HelveticaNeue
+		margin-top: -3px
+		+fs(12)
+		color: #bababa
+		
+.article-meta__info
+	margin-bottom: 13px
+
+.blog-article
+	width: 100%
+	
+	+rmin(700)
+		width: 79% 
+	
+	p
+		font-family: HelveticaNeue
+		font-weight: 400
+		+fs(12)  
+		line-height: 1.5 
+		margin-top: 17px
+		
+		+rmin(320)
+			text-align: justify
+		+rmin(700)
+			text-align: left
